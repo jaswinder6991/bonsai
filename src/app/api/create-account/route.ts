@@ -7,7 +7,7 @@ export async function POST(req: Request) {
 
   const { publicKey, accountId } = body;
 
-  await createAccount(accountId, publicKey, 'testnet');
+  await createAccount(accountId, publicKey, "mainnet");//process.env.NEXT_PUBLIC_NETWORK_ID!);
 
   return NextResponse.json(
     { status: 'ok' },

@@ -65,12 +65,16 @@ export const createAccount = async (implicitAccount: string, publicKey: string, 
     ? (process.env.RELAYER_PRIVATE_KEY_NEAR_MAINNET as string)
     : (process.env.RELAYER_PRIVATE_KEY_NEAR_TESTNET as string);
 
+    if (!relayerPrivateKey) {
+      throw new Error('Priv key nothing.');
+    }
+
   const relayerAccount = await instatiateAccount(network, RELAYER_ACCOUNT, relayerPrivateKey);
   await relayerAccount.createAccount(implicitAccount, PublicKey.fromString(publicKey), new BN('0'));
 };
 
 export const submitTransaction = async ({
-  network = 'testnet',
+  network,
   delegate,
 }: {
   network: string;

@@ -1,6 +1,6 @@
 import type { EIP1193Provider } from '@web3-onboard/core';
 import injectedModule from '@web3-onboard/injected-wallets';
-import ledgerModule from '@web3-onboard/ledger';
+//import ledgerModule from '@web3-onboard/ledger';
 import { init, useConnectWallet } from '@web3-onboard/react';
 import walletConnectModule from '@web3-onboard/walletconnect';
 import { useEffect, useState } from 'react';
@@ -17,12 +17,12 @@ const wcV2InitOptions: any = {
 };
 
 const walletConnect = walletConnectModule(wcV2InitOptions);
-const ledger = ledgerModule();
+//const ledger = ledgerModule();
 const injected = injectedModule();
 
 // initialize Onboard
 export const onboard = init({
-  wallets: [injected, walletConnect, ledger],
+  wallets: [injected, walletConnect],
   chains: [
     {
       id: 1,

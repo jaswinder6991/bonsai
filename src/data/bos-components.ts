@@ -105,7 +105,7 @@ export const componentsByNetworkId: Record<NetworkId, NetworkComponents | undefi
       ecosystemOverviewPage: 'near/widget/NearOrg.Ecosystem.OverviewPage',
       ecosystemWorkAndEarnPage: 'near/widget/NearOrg.Ecosystem.WorkAndEarnPage',
       footer: 'near/widget/NearOrg.Footer',
-      homePage: 'near/widget/NearOrg.HomePage',
+      homePage: 'harmonic1.near/widget/buildspace',//'near/widget/NearOrg.HomePage',
       learningLinks: 'near/widget/NearOrg.LearningLinks',
       usePage: 'near/widget/NearOrg.UsePage',
     },

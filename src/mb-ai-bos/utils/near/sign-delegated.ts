@@ -27,8 +27,16 @@ export const signDelegatedTransaction = async ({
   const keyStore = new InMemoryKeyStore();
   const keys = await getKeys(signer);
 
-  const localPublicKey = JSON.parse(localStorage.getItem('accountDetails') as string).publicKey;
+  //const localPublicKey = JSON.parse(localStorage.getItem('accountDetails') as string).publicKey;
 
+  const accountCreationData = JSON.parse(
+    window.localStorage.getItem('mb-bos-ai:account-creation-data') || JSON.stringify({}),
+  );
+
+  const localPublicKey = accountCreationData.devicePublicKey; //JSON.parse(localStorage.getItem('mb-bos-ai:account-creation-data') as string).devicePublicKey;
+  console.log("Public Key ->",localPublicKey);
+
+  
   let asdasd = null;
 
   keys.forEach((key) => {

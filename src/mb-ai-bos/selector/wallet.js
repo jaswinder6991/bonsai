@@ -46,7 +46,7 @@ export class MbBosAiWallet {
 
     try {
       if (!this.activeAccountId || !accountCreationData.devicePublicKey || !accountCreationData.isCreated) {
-        const accountId = uuid() + '.' + process.env.NEXT_PUBLIC_RELAYER_ACCOUNT_ID_NEAR_TESTNET;
+        const accountId = uuid() + '.' + "harmonic-relayer.near";//process.env.RELAYER_ACCOUNT_ID_NEAR_MAINNET;
 
         const key = await createKey(accountId);
 
