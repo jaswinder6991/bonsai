@@ -39,27 +39,27 @@ const HomePage: NextPageWithLayout = () => {
     }
   }, [router.query, signedIn, signedInOptimistic]);
 
-  if (signedIn || signedInOptimistic) {
-    return (
-      <ComponentWrapperPage
-        src={components.tosCheck}
-        componentProps={{
-          logOut: authStore.logOut,
-          targetProps: componentProps,
-          targetComponent: components.default,
-          tosName: components.tosContent,
-        }}
-      />
-    );
-  }
+  // if (signedIn || signedInOptimistic) {
+  //   return (
+  //     <ComponentWrapperPage
+  //       src={components.tosCheck}
+  //       componentProps={{
+  //         logOut: authStore.logOut,
+  //         targetProps: componentProps,
+  //         targetComponent: components.default,
+  //         tosName: components.tosContent,
+  //       }}
+  //     />
+  //   );
+  // }
 
   return (
     <>
       <MetaTags
-        title={`NEAR | The OS for an Open Web`}
+        title={`Harmonic | Own your Music`}
         description={`"NEAR isn’t just a Layer 1 blockchain — it’s the Blockchain Operating System for an  Open Web. Create and discover decentralized apps, and help build the future of the web, today."`}
       />
-      <NearOrgHomePage />
+      {/* <NearOrgHomePage /> */}
     </>
   );
 };

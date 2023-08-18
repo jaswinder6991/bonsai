@@ -11,7 +11,7 @@ interface Props {
 export function DefaultLayout({ children }: Props) {
   return (
     <>
-      <NearconBanner />
+      {/* <NearconBanner /> */}
       <Navigation />
       <BosLoaderBanner />
 
