@@ -166,13 +166,14 @@ export const DesktopNavigation = () => {
         <Link href="/">
           <Image
             priority
-            className={signedIn ? 'logo-only' : ''}
-            src={signedIn ? LogoBlack : NearLogotype}
-            alt="NEAR"
+            //className={signedIn ? 'logo-only' : ''}
+            src="https://www.harmonicguild.io/playground_assets/harmonic%20logo.svg"//{signedIn ? LogoBlack : NearLogotype}
+            width={100} height={40}
+            alt="Harmonic"
           />
         </Link>
 
-        <div className="form-wrapper">
+        {/* <div className="form-wrapper">
           <form
             onSubmit={(e) => {
               e.preventDefault();
@@ -202,8 +203,8 @@ export const DesktopNavigation = () => {
           )}
 
           {searchIsFocused && <Image src={ReturnIconImage} alt="Return" />}
-        </div>
-        <MainNavigationMenu />
+        </div> */}
+        {/* <MainNavigationMenu /> */}
         <div className="right-side-actions">
           {!signedIn && (
             <>
@@ -213,7 +214,7 @@ export const DesktopNavigation = () => {
           )}
           {signedIn && (
             <>
-              <NotificationButton />
+              {/* <NotificationButton /> */}
               <UserDropdownMenu />
             </>
           )}

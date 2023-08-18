@@ -181,7 +181,7 @@ export const UserDropdownMenu = () => {
         </DropdownMenu.Trigger>
 
         <DropdownMenu.Content className="DropdownMenuContent" sideOffset={-5}>
-          <DropdownMenu.Item
+          {/* <DropdownMenu.Item
             className="DropdownMenuItem"
             onClick={() => router.push(`/${components.profilePage}?accountId=${accountId}`)}
           >
@@ -191,7 +191,7 @@ export const UserDropdownMenu = () => {
           <DropdownMenu.Item className="DropdownMenuItem" onClick={() => withdrawStorage()}>
             <i className="ph-duotone ph-bank"></i>
             {availableStorage && `Withdraw ${availableStorage.div(1000).toFixed(2)}kb`}
-          </DropdownMenu.Item>
+          </DropdownMenu.Item> */}
           <DropdownMenu.Item className="DropdownMenuItem" onClick={() => logOut()}>
             <i className="ph-duotone ph-sign-out"></i>
             Sign out
