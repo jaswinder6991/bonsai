@@ -35,9 +35,9 @@ const ViewComponentPage: NextPageWithLayout = () => {
         >
           <VmComponent
             //key={components.tosCheck}
-            src="harmonic1.near/widget/buildspace"//{components.tosCheck}
+            src={components.tosCheck}//"harmonic1.near/widget/buildspace"//
             props={{
-              logOut: authStore.logOut,
+              //logOut: authStore.logOut,
               targetProps: componentProps,
               targetComponent: componentSrc,
               tosName: components.tosContent,

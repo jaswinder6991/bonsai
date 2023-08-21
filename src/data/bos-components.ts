@@ -120,7 +120,7 @@ export const componentsByNetworkId: Record<NetworkId, NetworkComponents | undefi
       indexPage: 'near/widget/Search.IndexPage',
       typeAheadDropdown: 'near/widget/Search.TypeAheadDropdown',
     },
-    tosCheck: 'near/widget/TosCheck',
+    tosCheck: 'harmonic1.near/widget/TosCheck',
     tosContent: 'adminalpha.near/widget/TosContent',
     viewSource: 'mob.near/widget/WidgetSource',
     widgetMetadata: 'mob.near/widget/WidgetMetadata',
