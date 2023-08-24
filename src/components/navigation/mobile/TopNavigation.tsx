@@ -38,10 +38,10 @@ const StyledNavigation = styled.div`
   .logo-link {
     margin-right: auto;
 
-    img {
-      width: 28px;
-      height: 28px;
-    }
+    // img {
+    //   width: 28px;
+    //   height: 28px;
+    // }
 
     &.large {
       img {
@@ -153,7 +153,7 @@ export function TopNavigation(props: Props) {
 
   return (
     <StyledNavigation className={`${scrolled ? 'border-bottom' : ''}`}>
-      {signedIn && (
+      {/* {signedIn && (
         <button
           onClick={() => router.push(`/${components.profilePage}?accountId=${accountId}`)}
           className="mobile-nav-profile-btn"
@@ -167,10 +167,16 @@ export function TopNavigation(props: Props) {
             }}
           />
         </button>
-      )}
+      )} */}
 
       <Link href="/" className={classNames(['logo-link', { large: !signedIn }])}>
-        <Image src={signedIn ? LogoBlack : NearLogotype} alt="NEAR logo" />
+        <Image
+            priority
+            //className={signedIn ? 'logo-only' : ''}
+            src="https://www.harmonicguild.io/playground_assets/harmonic%20logo.svg"//{signedIn ? LogoBlack : NearLogotype}
+            width={100} height={40}
+            alt="Harmonic"
+          />
       </Link>
 
       {!signedIn && (

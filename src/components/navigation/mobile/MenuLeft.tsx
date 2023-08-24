@@ -171,11 +171,8 @@ export function MenuLeft(props: Props) {
           onClick={props.onCloseMenu}
         />
 
-        <Image className="near-logotype" src={NearLogotype} alt="NEAR logotype" onClick={() => router.push('/')} />
-        <button className="search-btn" style={{ backgroundImage: `url(${SearchIcon.src})` }} onClick={search}>
-          Search NEAR
-        </button>
-        <AccordionMenu />
+        <Image className="near-logotype" src="https://www.harmonicguild.io/playground_assets/harmonic%20logo.svg" width={100} height={40} alt="Harmonic" onClick={() => router.push('/')} />
+
 
         {!signedIn && (
           <div className="bottom-btns">

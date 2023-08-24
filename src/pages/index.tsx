@@ -59,7 +59,7 @@ const HomePage: NextPageWithLayout = () => {
         title={`Harmonic | Own your Music`}
         description={`"NEAR isn’t just a Layer 1 blockchain — it’s the Blockchain Operating System for an  Open Web. Create and discover decentralized apps, and help build the future of the web, today."`}
       />
-      {/* <NearOrgHomePage /> */}
+      <NearOrgHomePage />
     </>
   );
 };
